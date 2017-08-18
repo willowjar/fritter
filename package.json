@@ -1,0 +1,27 @@
+{
+  "name": "fritter-wjarvis",
+  "version": "1.0.0",
+  "description": "Using Mocha ==========",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "handlebars templates/* -f public/templates.js && node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.mit.edu/6170-fa16/fritter-wjarvis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "handlebars": "^4.0.5",
+    "mongoose": "^4.6.3",
+    "shortid": "^2.2.6"
+  }
+}

@@ -1,0 +1,14 @@
+<ul class='list-group'>
+  {{#each item}}
+  	<li class='list-group-item'>
+  		<div class='tweet-delete'>
+  			<h4>Posted by: {{author}} </h4>{{#if isRetweet}} <h4> Retweeted From: {{originalAuthor}}</h4>{{/if}}<p>{{content}}</p>
+  		</div>
+  		{{#if isCurrentAuthor}}
+  			<button class='tweet-delete delete-button' tweet-id='{{uid}}'>Delete</button>
+  		{{else}}
+        <button class='tweet-delete retweet-button' tweet-id='{{uid}}'>Retweet</button>
+  		{{/if}}
+  	</li>
+  {{/each}}
+</ul>

@@ -1,0 +1,11 @@
+<ul class="list-group">
+	{{#each otheruser}}
+	  	<li class="list-group-item"><p class="user-follow">{{username}}</p> 
+	  	{{#if isFollowing}}
+	  		<button type="button" class="btn btn-default user-follow unfollow" user-id='{{_id}}'>Unfollow</button>
+	  	{{else}}
+	  		<button type="button" class="btn btn-default user-follow follow" user-id='{{_id}}'>Follow</button>	
+	  	{{/if}}
+	  	</li>
+  	{{/each}}
+</ul>

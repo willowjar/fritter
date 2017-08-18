@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fritter - Fritter Away Your Time</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+	<script src="handlebars-v4.0.5.js"></script>
+	<script src="templates.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="Willow Jarvis | Game of Life">
+	<meta name="keywords" content="Game of Life, 6.170">
+	<meta name="author" content="Willow Jarvis">
+</head>
+<body>
+
+<div class="modal fade" data-backdrop="static" id="myModal" role="dialog">
+    <div class="modal-dialog">
+	    <div class="modal-content">
+	        <div class="modal-header">
+	          <h3 class="modal-title">Sign up/Log in to Fritter</h3>
+	        </div>
+	        <div class="modal-body">
+	          	<form>
+				  <div class="form-group">
+				    <label for="usr">User&nbsp;Name:</label>
+				    <input type="text" name="username" class="form-control" id="usr"></input>
+				  </div>
+				  <div class="form-group">
+				    <label for="pwd">Password:</label>
+				    <input type="password" class="form-control" id="pwd">
+				  </div>
+				  <label id="error-message"></label>
+				</form>
+        	</div>
+        	<div class="modal-footer">
+				<button type="submit" class="btn btn-default" id="signup-submit" >Sign Up</button>
+				<button type="submit" class="btn btn-default" id="login-submit" >Log In</button>
+        	</div>
+    	</div>
+	</div>
+</div>
+
+<div id ="fritter-title"><h2><b>Fritter</b></h2><p>Best Way to Fritter Your Time Away</p></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+    	<h3>Personal Info</h3>
+
+    	<div id="current-user-display"></div>
+    	<button id="logout">Log Out</button>
+    	<h3>Other&nbsp;Users</h3>
+
+    	<div id="all-users">
+    	</div>
+    </div>
+    <div class="col-md-8">
+    	<h3>Tweets</h3>
+      	<input type="text" placeholder="What's happening?" id="current-user-tweet"></input>
+      	<button id="tweet-button">Tweet</button>
+	  	<div class="container">
+		  <h2>Tweets</h2>
+		  <ul class="nav nav-tabs">
+		    <li><a data-toggle="tab" href="#not-filtered-tweets">All&nbsp;Tweets</a></li>
+		    <li><a data-toggle="tab" href="#filtered-tweets">Filtered&nbsp;Tweets</a></li>
+		  </ul>
+		  <div class="tab-content">
+		    <div id="filtered-tweets" class="tab-pane fade">
+		      <h3>Tweets from people you follow</h3>
+		      <div id="followed-tweets">
+		      	<ul class="list-group"></ul>
+			  </div>
+		    </div>
+		    <div id="not-filtered-tweets" class="tab-pane fade">
+		    <h3>All Tweets</h3>
+		      <div id="all-tweets">
+		      	<ul class="list-group"></ul>
+			  </div>
+		    </div>
+		  </div>
+		</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+

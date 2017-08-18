@@ -1,0 +1,43 @@
+#fritter-title{
+	background-color: grey;
+	text-align: center;
+}
+.col-md-4{
+	border: 1px solid grey;
+}
+.col-md-8{
+	border: 1px solid grey;
+}
+/*
+#username-modification{
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-right:15px;
+}*/
+#current-user-tweet{
+	margin-top:15px;
+	width:540px;
+	margin-right:15px;
+}
+#current-user-display{
+	margin-bottom: 50px;
+}
+#all-tweets{
+	margin-top: 50px;
+}
+.tweet-delete{
+	display: inline-block;
+}
+.delete-button{
+	margin-left:50px;
+}
+.retweet-button{
+	margin-left:50px;
+}
+.user-follow{
+	display: inline-block;
+}
+
+#error-message{
+	color: red;
+}
